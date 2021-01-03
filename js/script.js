@@ -1,7 +1,10 @@
 
 	
-  window.onload = function envia_post() { 
-	const json =  {"senha": "A SENHA DESEJADA"};
+	
+	
+function envia_post() { 
+	const senha = document.getElementById("senha").value
+	const json =  {"senha": senha};
 	const options = {
     method: 'POST',
     body: JSON.stringify(json),
